@@ -1,0 +1,173 @@
+body ul li {  
+  margin:0;  /* 브라우저 기본 마진 리셋 */
+  padding:0;  /* 브라우저 기본 패딩 리셋 */
+  list-style: none;
+}
+#container {
+  width:100%;   /* 내용 전체의 너비 */
+  margin: 0 auto;  /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+}
+#header{
+  width:100%;  /* 부모 요소의 너비와 똑같게 */
+  height:135px;  /* 헤더의 높이 */
+  background-color: #fffbed;
+  /*background-color:#fbf8ea; */
+}
+
+#contents {
+  width: 100%;  /* 본문의 너비 */
+  height:100%;   /* 본문의 높이 */
+  /* background-color: #e2dcc9;*/
+  /* background-color: #dcd8cc; */
+  background-color:#fbfbf9;
+  float: left;  /* 왼쪽으로 플로팅 */
+}
+
+
+#footer {
+  width:100%;  /* 부모 요소의 너비와 똑같게  */
+  height:160px;  /* 푸터의 높이 */
+  background-color:#24211e;
+  clear:left;		/* 플로팅 해제 */
+  font-family: 'Mate SC', serif;
+  color: white;
+  text-align: center;
+}
+
+
+/* 메뉴바 */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.menu-1  {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-size: 115%;
+
+}
+
+.menu-1 ul {
+  background-color: #fffbed;
+  /*background-color: rgb(190, 185, 185);  main+sub 메뉴 전부 회색*/
+}
+
+.menu-1 > ul {
+  display: inline-block;
+  padding: 0 auto;
+  border-radius: 5px;
+  width: 1000px; /* 메뉴바의 가로 길이 */
+
+}
+
+.menu-1 ul > li {
+  display: inline-block;
+  padding-inline: 200;
+  text-align: left;
+}
+
+.menu-1 li > a {
+  padding: 10px 30px; /* 30px -> main menu 사이의 간격*/
+  display: block;
+}
+
+.menu-1 li:hover >a {
+  background-color: black;
+  color: white;
+}
+
+.menu-1 li {
+  position: relative;
+}
+
+
+.menu-1  ul ul {
+  display: none; /* 하위 메뉴 평소에는 안보이게 감춤 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+}
+
+.menu-1  li:hover > ul {
+  display: block; 
+}
+
+
+
+
+
+h3 {
+  color: white;
+  font-size: 100%;
+}
+
+h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+
+}
+
+
+
+body {
+  margin: 0;
+}
+
+
+
+
+/* 표 관련 */
+table {
+  border-top:1px solid gray; 
+  border-collapse:collapse;
+  caption-side:top;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+
+}
+td, th {
+  border-bottom:1px solid gray; 
+  padding:13px;
+  color: black;
+  
+}
+
+th {
+  font-size: 15px;
+  /*font-size: 100%;   /*회색 라인 글씨 크기*/
+}
+
+.heading {
+  background: lightgrey;
+  /*background: #e9e7df; */
+}
+
+
+.table_1 {
+  text-align: center;
+  font-size: 13px;
+ /* font-size: 80%;   /*테이블 컨텐츠 글씨 크기*/
+  color: #555555;
+}
+
+#contents {
+  text-align: center;
+}
+
+
+
+
+
+.ref {
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  
+}
